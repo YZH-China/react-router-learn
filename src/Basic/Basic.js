@@ -35,7 +35,3 @@ class Basic extends Component {
 }
 
 export default Basic;
-
-// <Route exact path="/" component={Home}/>
-// <Route path="/about" component={About}/>
-// <Route path="/topics" component={Topics}/>
