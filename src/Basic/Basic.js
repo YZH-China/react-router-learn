@@ -11,6 +11,8 @@ import './Basic.css';
  */
 import URLParameters from '../URLParameters';
 import Redirects from '../Redirects';
+import CustomLink from '../CustomLink';
+import PreventingTransitions from '../PreventingTransitions';
 
 class Basic extends Component {
   render() {
@@ -24,10 +26,18 @@ class Basic extends Component {
             <li>
               <Link to="/redirects">Redirects</Link>
             </li>
+            <li>
+              <Link to="/customlink">CustomLink</Link>
+            </li>
+            <li>
+              <Link to="/preventingTransitions">PreventingTransitions</Link>
+            </li>
           </ul>
 
           <Route path="/urlparameters" component={URLParameters}></Route>
           <Route path="/redirects" component={Redirects}></Route>
+          <Route path="/customlink" component={CustomLink}></Route>
+          <Route path="/preventingTransitions" component={PreventingTransitions}></Route>
         </div>
       </Router>
     );
