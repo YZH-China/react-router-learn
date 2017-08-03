@@ -13,7 +13,7 @@ class Login extends Component {
   };
   
   render() {
-    const { authenticate, history } = this.props; 
+    const { authenticate } = this.props; 
     const { from } = this.props.location.state || {
       from: {
         pathname: '/redirects'
