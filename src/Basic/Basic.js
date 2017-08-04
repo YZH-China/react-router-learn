@@ -18,6 +18,8 @@ import RecursivePath from '../RecursivePath';
 import Sidebar from '../Sidebar';
 import AnimationTransitions from '../AnimatedTransitions';
 import AmbigousExample from '../AmbiguousMatches';
+import RouteConfig from '../RouteConfig';
+import ModalGallery from '../ModalGallery';
 
 class Basic extends Component {
   render() {
@@ -52,6 +54,12 @@ class Basic extends Component {
             <li>
               <Link to="/ambigousExample">AmbigousExample</Link>
             </li>
+            <li>
+              <Link to="/routeConfig">RouteConfig</Link>
+            </li>
+            <li>
+              <Link to="/modalGallery">ModalGallery</Link>
+            </li>
           </ul>
 
           <Route path="/urlparameters" component={URLParameters}></Route>
@@ -63,6 +71,8 @@ class Basic extends Component {
           <Route path="/sidebar" component={Sidebar}></Route>
           <Route path="/animationTransitions" component={AnimationTransitions}></Route>
           <Route path="/ambigousExample" component={AmbigousExample}></Route>
+          <Route path="/routeConfig" component={RouteConfig}></Route>
+          <Route path="/modalGallery" component={ModalGallery}></Route>
         </div>
       </Router>
     );
